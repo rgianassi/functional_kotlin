@@ -1,6 +1,6 @@
 [![Java CI with Gradle](https://github.com/rgianassi/functional_kotlin/actions/workflows/gradle.yml/badge.svg)](https://github.com/rgianassi/functional_kotlin/actions/workflows/gradle.yml)
 
-Version: 0.1.0
+Version: 0.2.0
 
 # functional_kotlin
 
