@@ -1,4 +1,7 @@
 commitizen:
+  changelog_file: CHANGELOG.md
+  changelog_incremental: true
+  changelog_start_rev: 0.1.0
   name: cz_conventional_commits
   tag_format: $version
   update_changelog_on_bump: true
