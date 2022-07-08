@@ -1,0 +1,26 @@
+codecov:
+  notify:
+    wait_for_ci: false
+
+coverage:
+  status:
+    project:
+      default:
+        target: 75%
+        threshold: 1%
+    patch:
+      default:
+        target: 100%
+
+ignore:
+  - "**/*.class"
+  - "**/*.ctxt"
+  - "**/*.log"
+  - "**/*.jar"
+  - "**/*.war"
+  - "**/*.nar"
+  - "**/*.ear"
+  - "**/*.zip"
+  - "**/*.tar.gz"
+  - "**/*.rar"
+  - ".mtj.tmp"

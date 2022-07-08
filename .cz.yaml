@@ -8,4 +8,3 @@ commitizen:
   version: 0.2.0
   version_files:
   - VERSION
-  - README.md

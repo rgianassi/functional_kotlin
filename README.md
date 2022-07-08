@@ -1,6 +1,7 @@
 [![Java CI with Gradle](https://github.com/rgianassi/functional_kotlin/actions/workflows/gradle.yml/badge.svg)](https://github.com/rgianassi/functional_kotlin/actions/workflows/gradle.yml)
-
-Version: 0.2.0
+![GitHub](https://img.shields.io/github/license/rgianassi/functional_kotlin)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/rgianassi/functional_kotlin)
+![Codecov](https://img.shields.io/codecov/c/github/rgianassi/functional_kotlin)
 
 # functional_kotlin
 
