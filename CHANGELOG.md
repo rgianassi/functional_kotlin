@@ -1,3 +1,13 @@
+## 0.4.0 (2022-07-08)
+
+### Fix
+
+- Fix spotless checks
+
+### Feat
+
+- Add spotless for linting
+
 ## 0.3.0 (2022-07-08)
 
 ### Feat
