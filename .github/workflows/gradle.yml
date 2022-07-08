@@ -24,6 +24,8 @@ jobs:
     - name: Generate Gradle wrapper
       run: gradle wrapper
     - uses: gradle/wrapper-validation-action@v1
+    - name: Spotless checks
+      run: ./gradlew spotlessCheck
     - name: Execute Gradle build
       run: ./gradlew build
     - name: Archive test report

@@ -1,5 +1,6 @@
 plugins {
     id("com.diffplug.spotless") version "6.8.0" apply true
+    // id("org.cqfn.diktat.diktat-gradle-plugin") version "1.2.1" apply true
 }
 
 repositories {
@@ -15,15 +16,16 @@ spotless {
     }
     kotlin {
         target("**/*.kt")
+        targetExclude("**/build/**")
         ktlint()
-        //diktat()
-        prettier()
+        // diktat()
         indentWithSpaces()
         trimTrailingWhitespace()
         endWithNewline()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
-        //diktat()
+        targetExclude("**/build/**")
+        // diktat()
     }
 }
