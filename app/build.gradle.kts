@@ -13,5 +13,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("functional_kotlin.app.AppKt")
+    mainClass.set("functionalKotlin.app.MainKt")
 }
