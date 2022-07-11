@@ -24,6 +24,12 @@ and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
     Feat for new features.
     Fix for any bug fixes.
 
+## 0.6.0 (2022-07-11)
+
+### Feat
+
+- Add diktat
+
 ## 0.5.1 (2022-07-11)
 
 ### Fix
