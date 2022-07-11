@@ -23,14 +23,11 @@ and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
     Feat for new features.
     Fix for any bug fixes.
 
-### Unreleased section
+## 0.5.1 (2022-07-11)
 
-    Keep an Unreleased section at the top to track upcoming changes.
+### Fix
 
-    This serves two purposes:
-
-    People can see what changes they might expect in upcoming releases
-    At release time, you can move the Unreleased section changes into a new release version section.
+- Add some documentation to changelog
 
 ## 0.5.0 (2022-07-11)
 
