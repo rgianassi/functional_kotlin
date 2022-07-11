@@ -8,6 +8,8 @@
  */
 
 rootProject.name = "functional_kotlin"
+
 include("app")
+
 include("list")
 include("utilities")
