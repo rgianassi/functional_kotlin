@@ -1,11 +1,13 @@
 plugins {
     id("com.diffplug.spotless") version "6.8.0" apply true
-    // id("org.cqfn.diktat.diktat-gradle-plugin") version "1.2.1" apply true
+    id("org.cqfn.diktat.diktat-gradle-plugin") version "1.2.1" apply true
 }
 
 repositories {
     // Use the plugin portal to apply community plugins in convention plugins.
     gradlePluginPortal()
+    mavenLocal()
+    mavenCentral()
 }
 
 spotless {
@@ -18,7 +20,9 @@ spotless {
         target("**/*.kt")
         targetExclude("**/build/**")
         ktlint()
-        // diktat()
+        diktat {
+            inputs { include("src/**/*.kt") }
+        }
         indentWithSpaces()
         trimTrailingWhitespace()
         endWithNewline()
@@ -26,6 +30,6 @@ spotless {
     kotlinGradle {
         target("**/*.gradle.kts")
         targetExclude("**/build/**")
-        // diktat()
+        diktat()
     }
 }
