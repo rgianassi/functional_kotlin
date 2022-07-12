@@ -31,7 +31,10 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
     // Use JUnit Jupiter for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation(platform("org.junit:junit-bom:5.8.2"))
+
+    testImplementation("io.strikt:strikt-core:0.34.1")
 }
 
 tasks.named<Test>("test") {
