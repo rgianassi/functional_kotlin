@@ -40,6 +40,12 @@ dependencies {
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+
+    testLogging {
+        events("passed", "skipped", "failed")
+        showStandardStreams = false
+        outputs.upToDateWhen { false }
+    }
 }
 
 tasks.jacocoTestReport {
@@ -47,5 +53,11 @@ tasks.jacocoTestReport {
     reports {
         html.required.set(true)
         xml.required.set(true)
+    }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
