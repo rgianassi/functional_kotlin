@@ -35,6 +35,12 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.8.2"))
 
     testImplementation("io.strikt:strikt-core:0.34.1")
+
+    // http4k
+    implementation(platform("org.http4k:http4k-bom:4.30.3.0"))
+    implementation("org.http4k:http4k-core")
+    implementation("org.http4k:http4k-server-undertow")
+    implementation("org.http4k:http4k-client-apache")
 }
 
 tasks.named<Test>("test") {
