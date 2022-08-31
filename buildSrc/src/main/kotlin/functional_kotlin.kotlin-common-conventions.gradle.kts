@@ -31,12 +31,27 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
     // Use JUnit Jupiter for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation(platform("org.junit:junit-bom:5.8.2"))
+
+    testImplementation("io.strikt:strikt-core:0.34.1")
+
+    // http4k
+    implementation(platform("org.http4k:http4k-bom:4.30.3.0"))
+    implementation("org.http4k:http4k-core")
+    implementation("org.http4k:http4k-server-undertow")
+    implementation("org.http4k:http4k-client-apache")
 }
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+
+    testLogging {
+        events("passed", "skipped", "failed")
+        showStandardStreams = false
+        outputs.upToDateWhen { false }
+    }
 }
 
 tasks.jacocoTestReport {
@@ -44,5 +59,11 @@ tasks.jacocoTestReport {
     reports {
         html.required.set(true)
         xml.required.set(true)
+    }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
