@@ -17,7 +17,7 @@ jobs:
         distribution: temurin
         java-version: 17
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2.2.1
+      uses: gradle/gradle-build-action@v2.4.2
       #cache-read-only: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/release' }}
       with:
         gradle-version: 7.4.2
